@@ -6,6 +6,82 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -100,8 +176,50 @@ body, html {
         I am interested in image processing  cloud computing, web developement, high performance computing, blockchain, IoT, deep learning and machine learning to name a few.<br>
        I did my Undergraduation at SSSIHL Brindavan, whitefields where I did my Hons. course in Mathematics and then did my masters course M.Sc in Mathematics at SSSIHL Prasanthi Nilayam with specialization
        in computer Science. </p>
+  View my github profile : <a href="https://www.github.com/gauthamdasu">gauthamdasu</a>
         </div>
   </div>
+
+
+
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">Projects</h3>
+</div>
+  </head>
+  <body>
+  <div class="slideshow-container">
+  <div class="mySlides">
+    <p class="author"> Masters Project</p>
+    <p>In my M.Tech projet I'm working currently on information extraction from scanned documnets using image processing and deep learning techniques. </p>
+  </div>
+  <div class="mySlides">
+<p class="author"> Masters Project</p>
+    <p>As part of my M.Sc Disseration a study of available reversible watermarking techniques for secure transfer of medical images
+over Internet and a comparative study of available frequency techniques was done.</p>
+
+  </div>
+<div class="mySlides">
+    <p class="author"> Bachelors Project</p>
+        <p>A simple text editor with feature of tab suggestion of words written in c.
+         C Mini Project: As part of the course a simple word editor was built in c which had features of suggestion of
+        words by a tab press, user login and user authentication, searching for a word in dictionary, insertion and deletion
+        of words.
+              </p>
+
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+  </div>
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
@@ -116,34 +234,18 @@ body, html {
   <div class="w3-third">
     <img src="./images/2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="blossom" >
     <img src="./images/3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="light lamp" >
-    <img src="./images/4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="yellow" >
-    <img src="./images/5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="just born" >
-    <img src="./images/6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="budding" >
-<img src="./images/20.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="BMW">
-  </div>
+    </div>
 
   <div class="w3-third">
-    <img src="./images/8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="color explode" >
-    <img src="./images/9.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="spare parts" >
-    <img src="./images/10.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="green" >
-    <img src="./images/11.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="butter fly" >
-    <img src="./images/18.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skyes" >
+    <img src="./images/4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="color explode" >
+    <img src="./images/5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="spare parts" >
   </div>
 <div class="w3-third">
-    <img src="./images/13.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="green" >
-    <img src="./images/14.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="green">
-    <img src="./images/15.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="nature">
-    <img src="./images/17.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skies">
-    <img src="./images/19.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hangings">
+    <img src="./images/6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="green" >
+    <img src="./images/7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="green">
 
   </div>
-
 </div>
-<p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
-
-
-
-
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -163,7 +265,7 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Currently I'm a student. Would love to colabarate</h3>
+  <h3 class="w3-center">Currently I'm a student. Would love to collaborate</h3>
   <p class="w3-center"><em>You can contact me.</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
@@ -189,8 +291,35 @@ body, html {
 
 </footer>
 
+
+
 <script>
-// Toggle grid padding
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
 
 
